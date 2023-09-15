@@ -1,3 +1,5 @@
+/* Reset default margin, use flex to center content, and set background color */
+
 body{
     margin: 0;
     display: flex;
@@ -5,6 +7,7 @@ body{
     background-color: lightgray;
 }
 
+/* Style the form container */
 .form{
     position: absolute;
     top: 30%;
@@ -14,6 +17,7 @@ body{
     border-radius: 10px;
 }
 
+/* Style the input field */
 .input{
     width: 100%;
     box-sizing: border-box;
@@ -24,15 +28,18 @@ body{
     font-family: cursive;
 }
 
+/* Style the input field's placeholder text */
 .input::placeholder{
     color: lightgray;
 }
 
+/* Style the list container */
 .list{
     padding: 0;
     margin: 0;
 }
 
+/* Style list items */
 .list li{
     list-style-type: none;
     padding: 20px;
@@ -42,6 +49,7 @@ body{
     position: relative;
 }
 
+/* Style the trash (delete) icon */
 .list li .fa-trash{
     color: red;
     position: absolute;
@@ -50,6 +58,8 @@ body{
     transform: translateY(-50%);
     cursor: pointer;
 }
+
+/* Style the checkmark (complete) icon */
 .list li .fa-check-square{
     color: green;
     position: absolute;
@@ -59,11 +69,13 @@ body{
     cursor: pointer;
 }
 
+/* Style checked list items and their checkmark icon */
 .list li.checked {
     color: darkgray;
     text-decoration: line-through;
 }
 
+/* Adjust the position and style of the submit button */
 .list li.checked .fa-check-square{
     color: darkgray;
 }
