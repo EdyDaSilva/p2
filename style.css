@@ -67,3 +67,18 @@ body{
 .list li.checked .fa-check-square{
     color: darkgray;
 }
+
+/* Adjust the position of the submit button */
+.form button[type="submit"] {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 20px;
+    font-family: cursive;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
