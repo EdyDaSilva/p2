@@ -11,7 +11,7 @@
 <br>
 <h2>Usage</h2>
 <li>Where to find it:</li>
-            <pre><code>https://github.com/EdyDaSilva/CI_P2</code></pre>
+            <pre><code>https://github.com/EdyDaSilva/p2</code></pre>
             <li>Open the <code>index.html</code> file in your web browser.</li>
             <li>You will see an input field where you can type your tasks and a list that displays your tasks.</li>
             <li>To add a task, type it in the input field and press Enter.</li>
