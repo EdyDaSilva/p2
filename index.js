@@ -17,7 +17,10 @@ if (list) {
 // Add a submit event listener to the form
 formEl.addEventListener("submit", (event) => {
   event.preventDefault(); // Prevent the form from submitting and refreshing the page
+  const newTask = inputEl.value.trim(); // Get the task text and remove leading/trailing whitespace
+  if (newTask !== "") {
   toDoList(); // Call the toDoList function to add a new task
+  }
 });
 
 // Define the toDoList function for adding tasks
