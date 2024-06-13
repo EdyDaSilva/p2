@@ -1,20 +1,21 @@
-/* Reset default margin, use flex to center content, and set background color */
 
 body{
     margin: 0;
     display: flex;
     justify-content: center;
     background-color: lightgray;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Style the form container */
 .form{
     position: absolute;
-    top: 30%;
+    top: 8%;
     box-shadow: 0 4px 8px rgba(0,0,0,.3);
     width: 400px;
     background-color: lightgreen;
     border-radius: 10px;
+    font-family: 'Roboto', sans-serif; 
 }
 
 /* Style the input field */
@@ -26,6 +27,7 @@ body{
     border: none;
     font-size: 20px;
     font-family: cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Style the input field's placeholder text */
@@ -111,6 +113,10 @@ body{
     display: block;
     margin: 0 auto;
   }
+
+  button[type="submit"] {
+    font-family: 'Roboto', sans-serif; /* Apply the font to the submit button */
+}
 
  /* Adjust the form and list for better mobile experience */
 @media screen and (max-width: 768px) {
