@@ -19,7 +19,10 @@ formEl.addEventListener("submit", (event) => {
   event.preventDefault(); // Prevent the form from submitting and refreshing the page
   const newTask = inputEl.value.trim(); // Get the task text and remove leading/trailing whitespace
   if (newTask !== "") {
-  toDoList(); // Call the toDoList function to add a new task
+    toDoList(); // Call the toDoList function to add a new task
+    inputEl.value = ""; // Clear the input field after submitting
+  } else {
+    alert("Please enter a task!"); // Provide feedback if the field is empty
   }
 });
 
@@ -67,9 +70,11 @@ function toDoList(task) {
   });
 
    // Add a click event listener to the trash button
-  trashBtnEl.addEventListener("click", () => {
-    liEl.remove(); // Remove the task from the list
-    updateLocalStorage();  // Update the local storage after removal
+   trashBtnEl.addEventListener("click", () => {
+    if (confirm("Are you sure you want to delete this task?")) {
+      liEl.remove(); // Remove the task from the list
+      updateLocalStorage(); // Update the local storage after removal
+    }
   });
 
   // Update the local storage with the current task list

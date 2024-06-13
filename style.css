@@ -33,6 +33,22 @@ body{
     color: lightgray;
 }
 
+/* Animation for adding a task */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .list li {
+    animation: slideIn 0.3s ease-out;
+  }
+
 /* Style the list container */
 .list{
     padding: 0;
@@ -96,24 +112,27 @@ body{
     margin: 0 auto;
   }
 
-  /* Media query for mobile responsiveness */
+ /* Adjust the form and list for better mobile experience */
 @media screen and (max-width: 768px) {
     .form {
-        width: 100%; /* Make the form container full width for small screens */
-        left: 0;
-        right: 0;
+      width: 90%; /* Adjust width for better responsiveness */
+      left: 0;
+      right: 0;
+      margin: auto; /* Center the form */
     }
-
+  
     .input {
-        font-size: 16px; /* Reduce font size for better mobile readability */
+      font-size: 18px; /* Adjust font size */
+      padding: 15px; /* Adjust padding */
     }
-
+  
     .list li {
-        font-size: 16px; /* Reduce font size for better mobile readability */
+      font-size: 18px; /* Adjust font size */
+      padding: 15px; /* Adjust padding */
     }
-
+  
     .form button[type="submit"] {
-        width: 100%; /* Make the button full width for small screens */
-        border-radius: 10px; /* Adjust button border-radius for small screens */
+      width: 90%; /* Adjust button width */
+      border-radius: 10px; /* Adjust button border-radius */
     }
-}
+  }
