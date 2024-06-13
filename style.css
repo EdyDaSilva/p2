@@ -4,7 +4,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: lightgray;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Style the form container */
@@ -15,7 +15,7 @@ body{
     width: 400px;
     background-color: lightgreen;
     border-radius: 10px;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Times New Roman', Times, serif; 
 }
 
 /* Style the input field */
@@ -27,7 +27,7 @@ body{
     border: none;
     font-size: 20px;
     font-family: cursive;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Style the input field's placeholder text */
